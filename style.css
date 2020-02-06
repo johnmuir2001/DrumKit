@@ -8,6 +8,7 @@ body{
     flex-direction: row;
     margin: 30px 100px;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .drum{
     display: flex;
@@ -16,6 +17,7 @@ body{
     text-align: center;
 }
 .drumContainer{
+    margin: 10px;
     position: absolute;
     top: 70%;
     left: 50%;
@@ -23,6 +25,9 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+#main{
+    cursor: pointer;
 }
 .mainDrum{
     height: 200px;
@@ -149,6 +154,9 @@ body{
     50%{
         transform: scale(1.05);
     }
+}
+#tomDrum{
+    cursor: pointer;
 }
 .tomContainer{
     position: relative;
@@ -320,6 +328,7 @@ body{
     position: relative;
     left: -50px;
     z-index: -2;
+    cursor: pointer;
 }
 .snareBody{
     position: absolute;
@@ -578,6 +587,7 @@ body{
     position: absolute;
     top: -55px;
     left: -190px;
+    cursor: pointer;
 }
 #mainCymbal {
     position: absolute;
@@ -737,6 +747,7 @@ body{
     top: -350px;
     left: 240px;
     z-index: 2;
+    cursor: pointer;
 }
 #hihatCymbal{
     position: absolute;
@@ -908,4 +919,15 @@ body{
     z-index: -20;
     top: 150px;
     left: -215px;
+}
+@media only screen and (max-width: 710px) {
+.drumContainer{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 }
